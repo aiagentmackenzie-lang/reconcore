@@ -1,0 +1,25 @@
+{
+  "_comment": "ReconCore Scope Definition — do not commit to version control",
+  "engagementId":  "ENG-2025-0042",
+  "client":        "Acme Corporation",
+  "authorizedBy":  "Jane Smith, CISO, jane.smith@acme.example",
+  "testingWindow": {
+    "start": "2025-11-01T08:00:00Z",
+    "end":   "2025-11-07T20:00:00Z"
+  },
+  "targets": {
+    "domains": [
+      "acme.example",
+      "api.acme.example"
+    ],
+    "cidr": [
+      "203.0.113.0/28"
+    ]
+  },
+  "excludedHosts": [
+    "prod-db.acme.example"
+  ],
+  "maxConcurrency": 50,
+  "ratePerSecond":  100,
+  "notes": "Black-box external assessment. OT/SCADA systems are out of scope."
+}

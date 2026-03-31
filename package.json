@@ -1,0 +1,38 @@
+{
+  "name": "reconcore",
+  "version": "1.0.0",
+  "description": "ReconCore — Professional penetration testing suite (authorized use only)",
+  "main": "src/index.js",
+  "bin": {
+    "reconcore": "src/cli/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:scope": "jest tests/unit/scope-guard.test.js",
+    "lint": "eslint src/ tests/"
+  },
+  "keywords": [
+    "penetration-testing",
+    "security",
+    "reconnaissance",
+    "vulnerability-assessment",
+    "PTES",
+    "OWASP",
+    "MITRE-ATTCK",
+    "CVSS"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "winston": "^3.11.0",
+    "p-limit": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
