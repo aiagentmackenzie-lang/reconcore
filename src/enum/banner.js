@@ -131,7 +131,7 @@ function parseVersionFromBanner(banner, service) {
   }
 
   // Generic version pattern as fallback
-  const genericMatch = banner.match(/(\S+?)[\s\/v]+(\d+(?:\.\d+)+(?:[\w.-]*)?)/);
+  const genericMatch = banner.match(/(\S+?)[\s/v]+(\d+(?:\.\d+)+(?:[\w.-]*)?)/);
   if (genericMatch) {
     return `${genericMatch[1]} ${genericMatch[2]}`.trim();
   }

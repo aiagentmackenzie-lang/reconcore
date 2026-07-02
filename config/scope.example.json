@@ -4,8 +4,8 @@
   "client":        "Acme Corporation",
   "authorizedBy":  "Jane Smith, CISO, jane.smith@acme.example",
   "testingWindow": {
-    "start": "2025-11-01T08:00:00Z",
-    "end":   "2025-11-07T20:00:00Z"
+    "start": "2026-07-01T00:00:00Z",
+    "end":   "2026-12-31T23:59:59Z"
   },
   "targets": {
     "domains": [

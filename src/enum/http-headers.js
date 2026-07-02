@@ -162,7 +162,7 @@ function analyzeHeaders(host, port, timeoutMs) {
  * if missing and do not inflate the score if present.
  * @private
  */
-function calculateHeaderScore(present, missing) {
+function calculateHeaderScore(present) {
   const requiredHeaders = Object.keys(SECURITY_HEADERS).filter(h => SECURITY_HEADERS[h].required);
   const requiredPresent = present.filter(h => SECURITY_HEADERS[h]?.required);
   const score = ((requiredPresent.length / requiredHeaders.length) * 100).toFixed(0);

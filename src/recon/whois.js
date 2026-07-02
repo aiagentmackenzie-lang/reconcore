@@ -2,7 +2,6 @@
 'use strict';
 
 const net = require('node:net');
-const logger = require('../core/logger');
 
 /**
  * WHOIS lookup for a domain or IP.

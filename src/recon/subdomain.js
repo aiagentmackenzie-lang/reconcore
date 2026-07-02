@@ -1,7 +1,6 @@
 // src/recon/subdomain.js
 'use strict';
 
-const dns = require('node:dns').promises;
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const { RateLimiter } = require('../core/rate-limiter');
